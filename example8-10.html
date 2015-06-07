@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>jQuery Form Value</title>
+
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript">
+var total_times =0;
+$(document).ready(function() {
+
+$('#my-input').change(function() {
+  var inputVal = $('#my-input').val();
+	if(inputVal !=''){
+		total_times +=1;
+		alert("New Value : " +inputVal+"\nYou have changed : " +total_times+" times");
+		}
+	});
+});	
+
+</script>
+</head>
+<body>
+<h1>Kakada Ly, 05/26/2015</h1>
+<input type="text" id="my-input" />
+
+</body>
+</html>
